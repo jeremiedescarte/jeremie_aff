@@ -1,10 +1,11 @@
 import React from "react";
+import About from "../pages/about.jsx";
 import "./style.css";
 import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <>
+       <div >
       <header className="header">
         <a href="#" className="logo">AFFODO Service</a>
 
@@ -50,7 +51,7 @@ const Home = () => {
     <img src="/profile.png" alt="Jeremie" />
   </div>
       </section>
-    </>
+    </div>
   );
 };
 

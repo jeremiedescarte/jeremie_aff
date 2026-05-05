@@ -1,11 +1,21 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./components/home";
+import MainLayout from "./layouts/MainLayout";
+import Home from "./pages/home";
+import About from "./pages/about";
+import About2 from "./pages/contact";
+import Chat from "./pages/chat";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        {/* MainLayout est le parent — Navbar apparaît sur toutes les pages */}
+        <Route element={<MainLayout />}>          {/* Layout parent */}
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<About2 />} />
+          <Route path="/chat" element={<Chat />} />
+        </Route>
       </Routes>
     </Router>
   );
