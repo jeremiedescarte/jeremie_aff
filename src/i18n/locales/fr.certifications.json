@@ -1,0 +1,37 @@
+{
+    "certifications": {
+  "title":    "Certifications",
+  "subtitle": "Mes attestations, récompenses et participations.",
+  "download": "Télécharger",
+  "categories": {
+    "tous":       "Tous",
+    "academique": "Académique",
+    "associatif": "Associatif",
+    "formation": "Formation",
+    "autre": "Autre"
+  },
+  "items": {
+    "cesam": {
+      "name": "Attestation de poste — Chargé sportif",
+      "org":  "CESAM Beni Mellal",
+      "desc": "Attestation justifiant le poste de Chargé sportif au sein de la CESAM, Confédération des élèves étudiants et stagiaires Africains Étrangers au Maroc."
+    },
+    "aseesim": {
+      "name": "Attestation de poste — Chargé académique",
+      "org":  "Aseesim Beni Mellal",
+      "desc": "Attestation justifiant le poste de Chargé académique et scientifique au sein de l'Aseesim, Association des élèves étudiants et Stagiaires Ivoiriens au Maroc."
+    },
+    "meilleur": {
+      "name": "Meilleur étudiant de la promotion",
+      "org":  "SUPMTI Beni Mellal",
+      "desc": "Récompense académique obtenue pour les résultats scolaires exceptionnels lors de l'année universitaire 2024-2025."
+    },
+    "debat": {
+      "name": "Certificat de participation — Débat",
+      "org":  "Aseesim Beni Mellal",
+      "desc": "Certificat de participation au débat organisé par l'Aseesim dans le cadre des activités académiques et culturelles."
+    }
+  }
+}
+
+}

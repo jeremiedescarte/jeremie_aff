@@ -1,0 +1,23 @@
+{
+    "contact": {
+  "title":               "Contact",
+  "subtitle":            "Une opportunité ? Un projet ? Écris-moi directement.",
+  "available":           "Disponible",
+  "availableText":       "Ouvert aux opportunités full-stack, stages et missions freelance à l'international.",
+  "findMe":              "Me retrouver",
+  "location":            "Localisation",
+  "locationValue":       "Beni Mellal, Maroc",
+  "formTitle":           "Envoyer un message",
+  "name":                "Nom",
+  "email":               "Email",
+  "subject":             "Sujet",
+  "subjectPlaceholder":  "Opportunité de collaboration...",
+  "message":             "Message",
+  "messagePlaceholder":  "Décris ton projet ou ton opportunité...",
+  "send":                "Envoyer le message",
+  "sending":             "Envoi en cours...",
+  "success":             "Message envoyé avec succès !",
+  "error":               "Erreur lors de l'envoi. Réessaie."
+}
+
+}

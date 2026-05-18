@@ -1,0 +1,151 @@
+/* ============================================================
+   src/theme.css
+   
+   Rôle : Définir toutes les couleurs de l'application
+          sous forme de variables CSS.
+
+   Comment ça marche :
+     - En mode SOMBRE  → [data-theme="sombre"] est actif
+     - En mode CLAIR   → [data-theme="clair"]  est actif
+     - ThemeContext.jsx change l'attribut data-theme sur <html>
+       et les bonnes couleurs s'appliquent automatiquement.
+
+   Comment utiliser dans un composant React :
+     style={{ color: "var(--texte-principal)" }}
+     style={{ background: "var(--fond-base)" }}
+   ============================================================ */
+
+
+/* ══════════════════════════════════════════
+   MODE SOMBRE (défaut au démarrage)
+   Palette : bleu nuit profond + accent cyan
+   ══════════════════════════════════════════ */
+:root,
+[data-theme="sombre"] {
+
+  /* ── Fonds ── */
+  --fond-base      : #081b29;   /* fond principal de la page          */
+  --fond-surface   : #0a2235;   /* fond des cartes, sidebar, topbar   */
+  --fond-eleve     : #0d2a40;   /* fond des éléments au-dessus        */
+  --fond-survol    : rgba(255, 255, 255, 0.05); /* fond au hover       */
+
+
+  /* ── Box Shadows ── */
+  --ombre-carte     : 0 0 0 1px rgba(255,255,255,0.06), 0 4px 24px rgba(0,0,0,0.4);
+  --ombre-survolee  : 0 0 0 1px rgba(0,171,240,0.25), 0 8px 32px rgba(0,0,0,0.5);
+  --ombre-accent    : 0 0 16px rgba(0,171,240,0.15);
+
+  /* ── Bordures ── */
+  --bordure-douce  : rgba(255, 255, 255, 0.10); /* bordure subtile     */
+  --bordure-moyenne: rgba(255, 255, 255, 0.16); /* bordure visible     */
+  --bordure-forte  : rgba(255, 255, 255, 0.25); /* bordure prononcée   */
+
+  /* ── Textes ── */
+  --texte-principal : #ededed;                  /* texte titres, labels  */
+  --texte-secondaire: rgba(237, 237, 237, 0.60);/* texte descriptions    */
+  --texte-tertiaire : rgba(237, 237, 237, 0.38);/* texte placeholders    */
+  --texte-muet      : rgba(237, 237, 237, 0.20);/* texte très discret    */
+
+  /* ── Couleur d'accent (cyan) ── */
+  --accent          : #00abf0;                  /* couleur principale    */
+  --accent-survol   : #00c4ff;                  /* au hover              */
+  --accent-fond     : rgba(0, 171, 240, 0.12);  /* fond teinté accent    */
+  --accent-bordure  : rgba(0, 171, 240, 0.30);  /* bordure teinté accent */
+  --accent-texte    : #081b29;                  /* texte sur fond accent */
+
+  /* ── Ombres ── */
+  --ombre           : 0 4px 24px rgba(0, 0, 0, 0.35);
+  --ombre-petite    : 0 2px 8px  rgba(0, 0, 0, 0.25);
+
+  /* ── Scrollbar ── */
+  --scrollbar-fond  : #0a2235;
+  --scrollbar-pouce : rgba(0, 171, 240, 0.30);
+}
+
+
+/* ══════════════════════════════════════════
+   MODE CLAIR
+   Palette : blanc / gris clair + accent bleu
+   ══════════════════════════════════════════ */
+[data-theme="clair"] {
+
+  /* ── Fonds ── */
+  --fond-base      : #f4f6f9;   /* fond principal gris très clair     */
+  --fond-surface   : #ffffff;   /* fond des cartes, sidebar, topbar   */
+  --fond-eleve     : #eaecf0;   /* fond légèrement plus sombre        */
+  --fond-survol    : rgba(0, 0, 0, 0.04);       /* fond au hover       */
+
+
+  /* ── Box Shadows ── */
+  --ombre-carte     : 0 1px 3px rgba(0,0,0,0.08), 0 4px 16px rgba(0,0,0,0.06);
+  --ombre-survolee  : 0 4px 20px rgba(0,0,0,0.12);
+  --ombre-accent    : 0 0 16px rgba(0,144,204,0.15);
+
+  /* ── Bordures ── */
+  --bordure-douce  : rgba(0, 0, 0, 0.08);       /* bordure subtile     */
+  --bordure-moyenne: rgba(0, 0, 0, 0.13);       /* bordure visible     */
+  --bordure-forte  : rgba(0, 0, 0, 0.22);       /* bordure prononcée   */
+
+  /* ── Textes ── */
+  --texte-principal : #0f1923;                  /* texte titres         */
+  --texte-secondaire: rgba(15, 25, 35, 0.60);   /* texte descriptions   */
+  --texte-tertiaire : rgba(15, 25, 35, 0.40);   /* texte placeholders   */
+  --texte-muet      : rgba(15, 25, 35, 0.22);   /* texte très discret   */
+
+  /* ── Couleur d'accent (bleu un peu plus sombre en clair) ── */
+  --accent          : #0090cc;                  /* couleur principale   */
+  --accent-survol   : #00abf0;                  /* au hover             */
+  --accent-fond     : rgba(0, 144, 204, 0.10);  /* fond teinté accent   */
+  --accent-bordure  : rgba(0, 144, 204, 0.25);  /* bordure teinté       */
+  --accent-texte    : #ffffff;                  /* texte sur fond accent*/
+
+  /* ── Ombres ── */
+  --ombre           : 0 4px 24px rgba(0, 0, 0, 0.09);
+  --ombre-petite    : 0 2px 8px  rgba(0, 0, 0, 0.06);
+
+  /* ── Scrollbar ── */
+  --scrollbar-fond  : #eaecf0;
+  --scrollbar-pouce : rgba(0, 144, 204, 0.35);
+}
+
+
+/* ══════════════════════════════════════════
+   TRANSITIONS GLOBALES
+   Toutes les couleurs changent en douceur
+   quand on bascule le thème
+   ══════════════════════════════════════════ */
+*, *::before, *::after {
+  transition:
+    background-color 0.25s ease,
+    border-color     0.25s ease,
+    color            0.25s ease,
+    box-shadow       0.25s ease;
+}
+
+
+/* ══════════════════════════════════════════
+   SCROLLBAR PERSONNALISÉE
+   ══════════════════════════════════════════ */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-fond);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-pouce);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* ══════════════════════════════════════════
+   BASE GLOBALE
+   ══════════════════════════════════════════ */
+html, body, #root {
+  background: var(--fond-base);
+  color: var(--texte-principal);
+  min-height: 100vh;
+}
+

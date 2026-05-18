@@ -1,0 +1,41 @@
+{
+    "cv": {
+  "title":         "My Resume",
+  "subtitle":      "Select a profile to view and download the matching resume.",
+  "chooseProfile": "Choose a profile",
+  "adapted":       "Tailored resume",
+  "keySkills":     "Key skills highlighted",
+  "preview":       "Preview",
+  "download":      "Download PDF",
+  "fileInfo":      "PDF file · Updated 2025",
+  "tip":           "Each resume is tailored to highlight the most relevant skills for the targeted position. Choose the profile that matches the opportunity you are applying for.",
+  "profils": {
+    "fullstack": {
+      "name":    "Full Stack Developer",
+      "tagline": "Web & Mobile Development",
+      "desc":    "Full Stack-oriented resume highlighting my React.js, Laravel, MySQL and REST API design skills. Ideal for junior web developer or Full Stack internship positions."
+    },
+    "datascience": {
+      "name":    "Data Science",
+      "tagline": "Data analysis & exploitation",
+      "desc":    "Data-focused resume highlighting my Oracle and MySQL database skills, data analysis, Jupyter Notebook and Anaconda. Ideal for data or BI-oriented positions."
+    },
+    "cyber": {
+      "name":    "Cybersecurity & Networks",
+      "tagline": "IT security & network infrastructure",
+      "desc":    "Network and security-specialized resume highlighting network analysis, Wireshark, TCP/IP, virtualization and cybersecurity. Ideal for network administrator or security analyst positions."
+    },
+    "sysadmin": {
+      "name":    "System Administration",
+      "tagline": "System management & maintenance",
+      "desc":    "System administration-oriented resume highlighting DHCP/DNS configuration, server management, virtualization and system maintenance. Ideal for system administrator positions."
+    },
+    "gerant": {
+      "name":    "Manager",
+      "tagline": "Management, leadership & organization",
+      "desc":    "Versatile resume highlighting my team management, leadership, event organization and Agile Scrum methodology skills. Ideal for project manager or coordination positions."
+    }
+  }
+}
+
+}

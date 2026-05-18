@@ -1,0 +1,164 @@
+{
+  "title": "Formation",
+  "subtitle": "Voici un aperçu de mon parcours académique, des diplômes obtenus aux compétences acquises au fil des années.",
+
+  "status": {
+    "current": "En cours",
+    "done": "Obtenu",
+    "upcoming": "À venir"
+  },
+
+  "goal": {
+    "title": "Objectif professionnel",
+    "text": "Mon objectif est de continuer à apprendre et à évoluer dans le domaine de l'informatique, en me spécialisant dans les domaines de la data science et des systèmes d'information. Je vise à obtenir mon master avec mention, tout en développant mes compétences techniques et professionnelles à travers des stages et projets concrets. À long terme, je souhaite contribuer à des projets innovants qui ont un impact positif sur la société, tout en continuant à me former et à relever de nouveaux défis."
+  },
+
+  "formations": {
+  "master": {
+    "degree": "Master en Ingénierie des Systèmes Informatiques",
+    "option": "Data Science & Systèmes d'Information",
+    "school": "SUP MTI",
+    "location": "Beni Mellal, Maroc",
+    "years": {
+      "m2": {
+        "label": "M2 — 2026/2027",
+        "acquis": [
+          "Recherche & mémoire de fin d'études",
+          "Intelligence Artificielle appliquée",
+          "Gouvernance des données",
+          "Stage / Projet professionnel international"
+        ]
+      },
+      "m1": {
+        "label": "M1 — 2025/2026",
+        "acquis": [
+          "Machine Learning & Deep Learning",
+          "Big Data (Hadoop, Spark)",
+          "Systèmes distribués & microservices",
+          "Data Warehouse & Business Intelligence",
+          "Cybersécurité avancée",
+          "Cloud Computing (AWS / Azure)"
+        ]
+      }
+    }
+  },
+  "licence": {
+    "degree": "Licence en Ingénierie des Systèmes Informatiques",
+    "school": "SUP MTI",
+    "location": "Beni Mellal, Maroc"
+  },
+  "bac": {
+    "degree": "Baccalauréat",
+    "option": "Séries D (Scientifiques)",
+    "school": "Lycée Moderne de Bangolo",
+    "location": "Bangolo, Côte d'Ivoire"
+  }
+},
+
+  "l3": {
+    "title": "3ème année Ingénierie des Systèmes Informatiques",
+    "average": "",
+    "modules": [
+      {
+        "name": "Développement Orienté Objet (UML & Java)",
+        "items": [
+          "Analyse et Conception UML ",
+          "Programmation Orientée Objet Java "
+        ]
+      },
+      {
+        "name": "Services Applications Internet",
+        "items": ["Services Applicatifs de l’Internet"]
+      },
+      {
+        "name": "Génie Logiciel",
+        "items": ["Gestion de Projets Informatiques"]
+      },
+      {
+        "name": "Développement Python",
+        "items": ["Python"]
+      },
+      {
+        "name": "Systèmes",
+        "items": [
+          "Administration Windows ",
+          "Administration Unix "
+        ]
+      },
+      {
+        "name": "Compilation & Projets",
+        "items": [
+          "Compilation ",
+          "Projet de Compilation ",
+          "Projet Développement ",
+          "Projet Réseaux ",
+          "Projet de Fin de Cycle "
+        ]
+      }
+    ]
+  },
+
+  "l2": {
+    "title": "2ème année Ingénierie des Systèmes Informatiques",
+    "average": "16.71",
+    "modules": [
+      {
+        "name": "Analyse & Données",
+        "items": ["Analyse des Données "]
+      },
+      {
+        "name": "Réseaux",
+        "items": ["Transmission de Données ", "Réseaux TCP/IP CCNA II "]
+      },
+      {
+        "name": "Développement Web",
+        "items": ["Développement Applications Web "]
+      },
+      {
+        "name": "Systèmes",
+        "items": ["Unix ", "Architecture des Ordinateurs "]
+      },
+      {
+        "name": "Base de données & SI",
+        "items": ["Base de Données ", "Système d’Information "]
+      }
+    ]
+  },
+
+  "l1": {
+    "title": "1ère année Ingénierie des Systèmes Informatiques",
+    "average": "15.55",
+    "modules": [
+      {
+        "name": "Algorithmique & Programmation",
+        "items": [
+          "Algorithmique ",
+          "Langage C ",
+          "Algorithmique avancée "
+        ]
+      },
+      {
+        "name": "Mathématiques",
+        "items": [
+          "Analyse ",
+          "Algèbre ",
+          "Statistiques "
+        ]
+      },
+      {
+        "name": "Systèmes & Informatique",
+        "items": [
+          "Architecture Ordinateurs ",
+          "Systèmes d’exploitation "
+        ]
+      },
+      {
+        "name": "Électronique",
+        "items": [
+          "Électronique Analogique ",
+          "Circuits Logiques "
+        ]
+      }
+    ]
+  }
+}

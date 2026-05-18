@@ -1,0 +1,19 @@
+{
+    "competences": {
+  "title":        "Skills",
+  "subtitle":     "My technical and methodological areas of expertise.",
+  "skills":       "skills",
+  "technologies": "Technologies",
+  "avgLevel":     "Average level",
+  "avgDesc":      "across",
+  "cat": {
+    "web":        "Web & Mobile Development",
+    "data":       "Databases & Data Science",
+    "ml":         "Machine Learning & AI",
+    "network":    "Networks & Security",
+    "sysadmin":   "System Administration",
+    "uml":        "Analysis & Design",
+    "project":    "Project Management"
+  }
+}
+}

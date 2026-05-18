@@ -1,0 +1,71 @@
+{
+ "projets": {
+  "title":       "Projects",
+  "subtitle":    "My technical and academic achievements.",
+  "features":    "Main features",
+  "technologies":"Technologies used"
+},
+"competences": {
+  "proj": {
+    "supmti": {
+      "name":    "SUPMTI Connect",
+      "tagline": "University mobile application",
+      "desc":    "Android mobile application developed to improve communication, organization and interaction between students within the university environment. Centralizes several academic services in a modern and intuitive platform.",
+      "features": [
+        "Secure authentication",
+        "Announcement management",
+        "Club-structured forum",
+        "Academic agenda",
+        "Event management",
+        "Customizable user profile",
+        "Android notifications"
+      ]
+    },
+    "campuslink": {
+      "name":    "Campus Link",
+      "tagline": "Social & academic student platform",
+      "desc":    "Full Stack web application inspired by social networks, designed to allow students to communicate, share educational resources and organize their academic life in a modern and interactive environment.",
+      "features": [
+        "Interactive news feed",
+        "Posts, likes and comments",
+        "Private messaging",
+        "Schedule management",
+        "Interactive agenda",
+        "Course and file sharing",
+        "User profiles",
+        "Modern responsive interface"
+      ]
+    },
+
+"smartel": {
+  "name":    "Smartel Data Platform",
+  "tagline": "Data management and exploitation platform",
+  "desc":    "Data management and exploitation platform built collaboratively with the ISI 4 class at SUPMTI using Agile Scrum methodology. Goal: master team project organization and professional tools.",
+  "features": [
+    "User data management and organization",
+    "Interactive dashboard",
+    "Data visualization and structuring",
+    "Modern responsive interface",
+    "Collaborative project management",
+    "Task tracking and progress monitoring"
+  ]
+},
+
+    "portfolio": {
+      "name":    "Personal Portfolio",
+      "tagline": "Interactive professional portfolio",
+      "desc":    "Modern and responsive portfolio to present my skills, projects and experiences in software development, information systems, networks, data and cybersecurity.",
+      "features": [
+        "Skills presentation",
+        "Dynamic project display",
+        "Responsive interface",
+        "Multilingual FR/EN support",
+        "Interactive animations",
+        "Contact form",
+        "Modern navigation"
+      ]
+    }
+  }
+}
+
+}

@@ -1,0 +1,71 @@
+{
+ "projets": {
+  "title":       "Projets",
+  "subtitle":    "Mes réalisations techniques et académiques.",
+  "features":    "Fonctionnalités principales",
+  "technologies":"Technologies utilisées"
+},
+"competences": {
+  "proj": {
+    "supmti": {
+      "name":    "SUPMTI Connect",
+      "tagline": "Application mobile universitaire",
+      "desc":    "Application mobile Android développée pour améliorer la communication, l'organisation et l'interaction entre les étudiants au sein de l'environnement universitaire. Centralise plusieurs services académiques dans une plateforme moderne et intuitive.",
+      "features": [
+        "Authentification sécurisée",
+        "Gestion des annonces",
+        "Forum structuré par clubs",
+        "Agenda académique",
+        "Gestion des événements",
+        "Profil utilisateur personnalisable",
+        "Notifications Android"
+      ]
+    },
+    "campuslink": {
+      "name":    "Campus Link",
+      "tagline": "Plateforme sociale et académique",
+      "desc":    "Application web Full Stack inspirée des réseaux sociaux, conçue pour permettre aux étudiants de communiquer, partager des ressources pédagogiques et organiser leur vie académique dans un environnement moderne et interactif.",
+      "features": [
+        "Fil d'actualité interactif",
+        "Publications, likes et commentaires",
+        "Messagerie privée",
+        "Gestion d'emploi du temps",
+        "Agenda interactif",
+        "Partage de cours et fichiers",
+        "Profils utilisateurs",
+        "Interface responsive moderne"
+      ]
+    },
+
+  "smartel": {
+  "name":    "Smartel Data Platform",
+  "tagline": "Plateforme de gestion et d'exploitation de données",
+  "desc":    "Plateforme orientée gestion et exploitation des données, réalisée en collaboration avec la classe ISI 4 de SUPMTI via la méthodologie Agile Scrum. Objectif : maîtriser l'organisation d'un projet en équipe et les outils professionnels.",
+  "features": [
+    "Gestion et organisation des données utilisateurs",
+    "Tableau de bord interactif",
+    "Visualisation et structuration des informations",
+    "Interface responsive moderne",
+    "Gestion collaborative du projet",
+    "Suivi des tâches et avancement"
+  ]
+},
+
+    "portfolio": {
+      "name":    "Portfolio Personnel",
+      "tagline": "Portfolio professionnel interactif",
+      "desc":    "Portfolio moderne et responsive permettant de présenter mes compétences, projets et expériences dans les domaines du développement logiciel, des systèmes d'information, des réseaux, de la data et de la cybersécurité.",
+      "features": [
+        "Présentation des compétences",
+        "Affichage dynamique des projets",
+        "Interface responsive",
+        "Support multilingue FR/EN",
+        "Animations interactives",
+        "Formulaire de contact",
+        "Navigation moderne"
+      ]
+    }
+  }
+}
+
+}

@@ -1,0 +1,37 @@
+{
+    "certifications": {
+  "title":    "Certifications",
+  "subtitle": "My certificates, awards and participations.",
+  "download": "Download",
+  "categories": {
+    "tous":       "All",
+    "academique": "Academic",
+    "associatif": "Association",
+    "formation": "Training",
+    "autre": "Other"
+  },
+  "items": {
+    "cesam": {
+      "name": "Position Certificate — Sports Officer",
+      "org":  "CESAM Beni Mellal",
+      "desc": "Certificate confirming the position of Sports Officer within CESAM, the Confederation of African foreign students in Morocco."
+    },
+    "aseesim": {
+      "name": "Position Certificate — Academic Officer",
+      "org":  "Aseesim Beni Mellal",
+      "desc": "Certificate confirming the position of Academic and Scientific Officer within Aseesim, the Association of Ivorian students in Morocco."
+    },
+    "meilleur": {
+      "name": "Best Student of the Year",
+      "org":  "SUPMTI Beni Mellal",
+      "desc": "Academic award received for outstanding academic results during the 2024-2025 university year."
+    },
+    "debat": {
+      "name": "Participation Certificate — Debate",
+      "org":  "Aseesim Beni Mellal",
+      "desc": "Certificate of participation in the debate organized by Aseesim as part of academic and cultural activities."
+    }
+  }
+}
+
+}

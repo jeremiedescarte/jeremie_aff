@@ -1,0 +1,158 @@
+{
+  "title": "Education",
+  "subtitle": "Here is an overview of my academic journey, from degrees obtained to skills acquired over the years.",
+  "status": {
+    "current": "In progress",
+    "done": "Obtained",
+    "upcoming": "Upcoming"
+  },
+  "goal": {
+    "title": "Professional Goal",
+    "text": "My goal is to keep learning and growing in the field of computer science, specializing in data science and information systems. I aim to complete my master's degree with honors, while developing my technical and professional skills through internships and hands-on projects. In the long term, I want to contribute to innovative projects that have a positive impact on society, while continuing to learn and take on new challenges."
+  },
+  "formations": {
+    "master": {
+      "degree": "Master's in Computer Systems Engineering",
+      "option": "Data Science & Information Systems",
+      "school": "SUP MTI",
+      "location": "Beni Mellal, Morocco",
+      "years": {
+        "m2": {
+          "label": "M2 — 2026/2027",
+          "acquis": [
+            "Research & final thesis",
+            "Applied Artificial Intelligence",
+            "Data Governance",
+            "International Internship / Professional Project"
+          ]
+        },
+        "m1": {
+          "label": "M1 — 2025/2026",
+          "acquis": [
+            "Machine Learning & Deep Learning",
+            "Big Data (Hadoop, Spark)",
+            "Distributed Systems & Microservices",
+            "Data Warehouse & Business Intelligence",
+            "Advanced Cybersecurity",
+            "Cloud Computing (AWS / Azure)"
+          ]
+        }
+      }
+    },
+    "licence": {
+      "degree": "Bachelor's in Computer Systems Engineering",
+      "school": "SUP MTI",
+      "location": "Beni Mellal, Morocco"
+    },
+    "bac": {
+      "degree": "High School Diploma",
+      "option": "Series D (Science)",
+      "school": "Lycée Moderne de Bangolo",
+      "location": "Bangolo, Ivory Coast"
+    }
+  },
+  "l3": {
+    "title": "3rd Year — Computer Systems Engineering",
+    "average": "17.15",
+    "modules": [
+      {
+        "name": "Object-Oriented Development (UML & Java)",
+        "items": [
+          "UML Analysis and Design ",
+          "Object-Oriented Programming in Java"
+        ]
+      },
+      {
+        "name": "Internet Application Services",
+        "items": ["Internet Application Services"]
+      },
+      {
+        "name": "Software Engineering",
+        "items": ["IT Project Management"]
+      },
+      {
+        "name": "Python Development",
+        "items": ["Python"]
+      },
+      {
+        "name": "Systems",
+        "items": [
+          "Windows Administration",
+          "Unix Administration"
+        ]
+      },
+      {
+        "name": "Compilation & Projects",
+        "items": [
+          "Compilation",
+          "Compilation Project",
+          "Development Project",
+          "Network Project",
+          "End-of-Cycle Project"
+        ]
+      }
+    ]
+  },
+  "l2": {
+    "title": "2nd Year — Computer Systems Engineering",
+    "average": "",
+    "modules": [
+      {
+        "name": "Analysis & Data",
+        "items": ["Data Analysis"]
+      },
+      {
+        "name": "Networks",
+        "items": ["Data Transmission", "TCP/IP Networks CCNA II"]
+      },
+      {
+        "name": "Web Development",
+        "items": ["Web Application Development"]
+      },
+      {
+        "name": "Systems",
+        "items": ["Unix", "Computer Architecture"]
+      },
+      {
+        "name": "Database & IS",
+        "items": ["Database", "Information Systems"]
+      }
+    ]
+  },
+  "l1": {
+    "title": "1st Year — Computer Systems Engineering",
+    "average": "",
+    "modules": [
+      {
+        "name": "Algorithms & Programming",
+        "items": [
+          "Algorithms",
+          "C Language",
+          "Advanced Algorithms"
+        ]
+      },
+      {
+        "name": "Mathematics",
+        "items": [
+          "Analysis",
+          "Algebra",
+          "Statistics"
+        ]
+      },
+      {
+        "name": "Systems & Computing",
+        "items": [
+          "Computer Architecture",
+          "Operating Systems"
+        ]
+      },
+      {
+        "name": "Electronics",
+        "items": [
+          "Analog Electronics",
+          "Logic Circuits"
+        ]
+      }
+    ]
+  }
+}

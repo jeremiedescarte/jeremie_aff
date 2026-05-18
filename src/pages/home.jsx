@@ -5,13 +5,18 @@ import "./styles.css";
 
 
 const Home = () => {
-     const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang);
+    localStorage.setItem("lang", lang);
+  };
   return (
 
     <section className="min-h-screen flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-[10%] pt-28 pb-16 md:pt-0 gap-10">
 
       {/* ── BLOC 1 : Contenu texte (gauche) ── */}
-      <div className="flex flex-col items-start mt-28 max-w-2xl w-full">
+      <div className="flex flex-col items-start max-w-2xl w-full">
 
         {/* Titre */}
         <h1 className="text-2xl md:text-4xl lg:text-[40px] lg:font-bold lg:leading-[1.2] leading-tight mb-3">
@@ -32,14 +37,14 @@ const Home = () => {
         <div className="btn-box flex w-[345px] h-[45px] gap-4 flex-wrap mb-10 space-x-3">
 
           {/* Bouton 1 — Hire Me (fond plein) */}
-          <a href="#Contact"
+          <a href="/dashboard/contact"
             className="relative px-7 py-3 bg-[#00abf0] border-2 border-[#00abf0] font-semibold rounded-lg overflow-hidden group transition-all duration-300 hover:text-[#00abf0]">
             <span className="absolute inset-0 bg-[#081b29] translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500 ease-in-out z-0" />
             <span className="relative z-10">Hire Me</span>
           </a>
 
           {/* Bouton 2 — Let's Talk (contour) */}
-          <a href="#Contact"
+          <a href="/dashboard/chat"
             className="relative px-7 py-3 bg-transparent border-2 border-[#00abf0] text-[#00abf0] font-semibold rounded-lg overflow-hidden group transition-all duration-300 hover:text-[#081b29]">
             <span className="absolute inset-0 bg-[#00abf0] translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500 ease-in-out z-0" />
             <span className="relative z-10">Let's Talk</span>
@@ -65,7 +70,7 @@ const Home = () => {
       </div>
 
       {/* ── BLOC 4 : Image de profil (droite) ── */}
-      <div className="flex-shrink-0 mt-10 top-[40px] left-[30px] w-56 h-56 sm:w-72 sm:h-72 lg:w-[340px] lg:h-[450px] relative">
+      <div className="flex-shrink-0 left-[30px] w-56 h-56 sm:w-72 sm:h-72 lg:w-[340px] lg:h-[450px] relative">
         {/* Halo lumineux derrière l'image */}
         <div className="absolute inset-0 rounded-full bg-[#00abf0]/20 blur-2xl scale-110" />
         <img

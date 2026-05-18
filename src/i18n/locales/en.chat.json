@@ -1,0 +1,25 @@
+{
+    "chat": {
+  "title":          "AI Assistant",
+  "subtitle":       "Ask questions about Jeremie's profile, skills or projects.",
+  "assistantLabel": "Assistant",
+  "online":         "Online",
+  "placeholder":    "Ask your question...",
+  "welcome":        "Hello! I'm Jeremie's assistant. Feel free to ask me anything about his profile, skills or projects — in French or English ",
+  "errorDefault":   "Sorry, I couldn't generate a response.",
+  "errorNetwork":   "Connection error. Please try again.",
+  "suggestions": {
+    "s1":  "Skills?",
+    "s1t": "What are your main skills?",
+    "s2":  "Campus Link",
+    "s2t": "Tell me about the Campus Link project",
+    "s3":  "Open to work?",
+    "s3t": "Are you open to international opportunities?",
+    "s4":  "Tech stack?",
+    "s4t": "What is your technical stack?",
+    "s5":  "Experience?",
+    "s5t": "Tell me about your professional experience"
+  }
+}
+
+}

@@ -1,0 +1,25 @@
+{
+    "chat": {
+  "title":          "Assistant IA",
+  "subtitle":       "Posez vos questions sur le profil, les compétences ou les projets de Jeremie.",
+  "assistantLabel": "Assistant",
+  "online":         "En ligne",
+  "placeholder":    "Posez votre question...",
+  "welcome":        "Bonjour ! Je suis l'assistant de Jeremie. Posez-moi vos questions sur son profil, ses compétences ou ses projets — en français ou en anglais ",
+  "errorDefault":   "Désolé, je n'ai pas pu répondre.",
+  "errorNetwork":   "Erreur de connexion. Veuillez réessayer.",
+  "suggestions": {
+    "s1":  "Compétences ?",
+    "s1t": "Quelles sont tes compétences principales ?",
+    "s2":  "Campus Link",
+    "s2t": "Parle-moi du projet Campus Link",
+    "s3":  "Open to work ?",
+    "s3t": "Are you open to international opportunities?",
+    "s4":  "Stack tech ?",
+    "s4t": "Quel est ton stack technique ?",
+    "s5":  "Expérience ?",
+    "s5t": "Parle-moi de ton expérience professionnelle"
+  }
+}
+
+}

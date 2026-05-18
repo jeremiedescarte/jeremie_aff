@@ -6,12 +6,11 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation(); // détecte la page active
-  const { t, i18n } = useTranslation();  //  hook de traduction
+  const { t, i18n } = useTranslation();  //  hook de traduction   
 
-  const currentLang = i18n.language;     // 'en' ou 'fr'
-
-  const toggleLang = () => {
-    i18n.changeLanguage(currentLang === 'en' ? 'fr' : 'en');
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang);
+    localStorage.setItem("lang", lang);
   };
 
   useEffect(() => {
@@ -21,16 +20,21 @@ const Navbar = () => {
   }, []);
 
    const navLinks = [
-    { label: t('nav.home'),      to: "/",          isLink: true  },
-    { label: t('nav.about'),     to: "/about",     isLink: true  },
-    { label: t('nav.services'),  href: "#Services", isLink: false },
-    { label: t('nav.portfolio'), to: "/portfolio", isLink: true  },
-    { label: t('nav.contact'),   href: "/contact",  isLink: false },
+    { label: t('nav2.home'),      to: "/",          isLink: true  },
+    { label: t('nav2.about'),     to: "/about",     isLink: true  },
+    { label: t('nav2.services'),  href: "#Services", isLink: false },
+    { label: t('nav2.portfolio'), to: "/portfolio", isLink: true  },
+    { label: t('nav2.contact'),   href: "/contact",  isLink: false },
   ];
 
   return (
-    <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 px-6 md:px-[10%] py-4 flex justify-between items-center
-      ${scrolled ? "bg-[#081b29]/90 backdrop-blur-md shadow-lg shadow-[#00abf0]/10" : "bg-transparent"}`}>
+<header
+  className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 px-6 md:px-[10%] py-4 flex justify-between items-center
+  ${scrolled
+    ? "bg-[#081b29]/90 backdrop-blur-md shadow-lg shadow-[#00abf0]/10"
+    : "bg-[#081b29]"
+  }`}
+>
 
       {/* Logo */}
       <a href="#" className="text-xl md:text-4xl font-bold text-[#ededed] hover:text-[#00abf0] transition-colors duration-300">
@@ -54,9 +58,9 @@ const Navbar = () => {
           )
         )}
         {/* ── Switcher de langue (desktop) ── */}
-        <button onClick={toggleLang}
+        <button onClick={changeLanguage.bind(null, i18n.language === "fr" ? "en" : "fr")}
           className="flex items-center gap-2 px-3 py-1.5 border-2 border-[#00abf0] rounded-full text-[#00abf0] text-sm font-semibold hover:bg-[#00abf0] hover:text-[#081b29] transition-all duration-300">
-          🌐 {currentLang === 'en' ? 'FR' : 'EN'}
+          🌐 {i18n.language === "en" ? "FR" : "EN"}
         </button>
       </nav>
 
@@ -86,9 +90,9 @@ const Navbar = () => {
           )
         )}
                 {/* ── Switcher de langue (mobile) ── */}
-        <button onClick={() => { toggleLang(); setMenuOpen(false); }}
+        <button onClick={() => { changeLanguage(i18n.language === "fr" ? "en" : "fr"); setMenuOpen(false); }}
           className="flex items-center gap-2 px-4 py-2 border-2 border-[#00abf0] rounded-full text-[#00abf0] text-lg font-semibold hover:bg-[#00abf0] hover:text-[#081b29] transition-all duration-300">
-          🌐 {currentLang === 'en' ? 'FR' : 'EN'}
+          🌐 {i18n.language === "en" ? "FR" : "EN"}
         </button>
       </div>
     </header>

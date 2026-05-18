@@ -1,0 +1,20 @@
+{
+    "competences": {
+  "title":        "Compétences",
+  "subtitle":     "Mes domaines de maîtrise techniques et méthodologiques.",
+  "skills":       "compétences",
+  "technologies": "Technologies",
+  "avgLevel":     "Niveau moyen",
+  "avgDesc":      "sur",
+  "cat": {
+    "web":        "Développement Web & Mobile",
+    "data":       "Base de Données & Data Science",
+    "ml":         "Machine Learning & IA",
+    "network":    "Réseaux & Sécurité",
+    "sysadmin":   "Administration Système",
+    "uml":        "Analyse & Conception",
+    "project":    "Gestion de Projet"
+  }
+}
+
+}

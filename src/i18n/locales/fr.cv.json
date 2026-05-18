@@ -1,0 +1,41 @@
+{
+    "cv": {
+  "title":         "Mon CV",
+  "subtitle":      "Sélectionne un profil pour voir et télécharger le CV adapté.",
+  "chooseProfile": "Choisir un profil",
+  "adapted":       "CV adapté",
+  "keySkills":     "Compétences clés mises en avant",
+  "preview":       "Aperçu",
+  "download":      "Télécharger le PDF",
+  "fileInfo":      "Fichier PDF · Mis à jour 2025",
+  "tip":           "Chaque CV est adapté pour mettre en valeur les compétences les plus pertinentes selon le poste visé. Choisis le profil qui correspond à l'opportunité que tu cibles.",
+  "profils": {
+    "fullstack": {
+      "name":    "Full Stack Developer",
+      "tagline": "Développement Web & Mobile",
+      "desc":    "CV orienté développement Full Stack mettant en avant mes compétences React.js, Laravel, MySQL et la conception d'APIs REST. Idéal pour les postes de développeur web junior ou stagiaire Full Stack."
+    },
+    "datascience": {
+      "name":    "Data Science",
+      "tagline": "Analyse & exploitation de données",
+      "desc":    "CV axé sur la data mettant en avant mes compétences en bases de données Oracle et MySQL, analyse de données, Jupyter Notebook et Anaconda. Idéal pour les postes orientés data ou BI."
+    },
+    "cyber": {
+      "name":    "Cybersécurité & Réseaux",
+      "tagline": "Sécurité informatique & infrastructure réseau",
+      "desc":    "CV spécialisé réseaux et sécurité mettant en avant l'analyse réseau, Wireshark, TCP/IP, virtualisation et la cybersécurité. Idéal pour les postes d'administrateur réseau ou analyste sécurité."
+    },
+    "sysadmin": {
+      "name":    "Administration Système",
+      "tagline": "Gestion & maintenance des systèmes",
+      "desc":    "CV orienté administration système mettant en avant la configuration DHCP/DNS, la gestion des serveurs, la virtualisation et la maintenance système. Idéal pour les postes d'administrateur système."
+    },
+    "gerant": {
+      "name":    "Gérant / Manager",
+      "tagline": "Gestion, leadership & organisation",
+      "desc":    "CV polyvalent mettant en avant mes compétences en gestion d'équipe, leadership, organisation d'événements et méthodologie Agile Scrum. Idéal pour les postes de chef de projet ou de coordination."
+    }
+  }
+}
+
+}

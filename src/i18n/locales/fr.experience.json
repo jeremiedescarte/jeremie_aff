@@ -1,0 +1,145 @@
+{
+  "experience": {
+  "title":    "Expériences",
+  "subtitle": "Mon parcours professionnel, académique et technique.",
+  "missions":    "Missions réalisées",
+  "competences": "Compétences acquises",
+  "technologies":"Technologies utilisées",
+  "techList":    "Réalisations & maîtrises techniques",
+  "tabs": {
+    "pro":  "Professionnelles",
+    "acad": "Académiques",
+    "tech": "Techniques"
+  },
+  "types": {
+    "stage":       "Stage",
+    "associatif":  "Associatif",
+    "commercial":  "Commercial",
+    "pfe":         "PFE",
+    "module":      "Projet module",
+    "projet":      "Projet"
+  },
+  "pro": {
+    "us2i": {
+      "name": "Stage en développement informatique",
+      "org":  "US2I — Beni Mellal",
+      "desc": "Stage professionnel au sein de l'entreprise US2I, spécialisée en solutions numériques.",
+      "m1": "Participation au développement et à la maintenance d'applications",
+      "m2": "Assistance technique sur différents projets numériques",
+      "m3": "Collaboration avec l'équipe de développement sur les fonctionnalités et corrections",
+      "c1": "Travail en environnement professionnel",
+      "c2": "Collaboration en équipe technique",
+      "c3": "Résolution de bugs et optimisation de fonctionnalités",
+      "c4": "Compréhension du cycle de développement logiciel"
+    },
+    "cesam": {
+      "name": "Chargé sportif",
+      "org":  "CESAM — Beni Mellal",
+      "desc": "CESAM : Confédération des élèves étudiants et stagiaires Africains Étrangers au Maroc.",
+      "m1": "Organisation d'activités sportives étudiantes",
+      "m2": "Gestion et coordination des équipes participantes",
+      "m3": "Planification des événements et communication avec les étudiants",
+      "c1": "Leadership",
+      "c2": "Gestion d'équipe",
+      "c3": "Communication et organisation",
+      "c4": "Gestion du temps et des responsabilités"
+    },
+    "aseesim": {
+      "name": "Chargé académique et scientifique",
+      "org":  "Aseesim — Beni Mellal",
+      "desc": "Aseesim : Association des élèves étudiants et Stagiaires Ivoiriens au Maroc.",
+      "m1": "Organisation d'activités académiques et scientifiques",
+      "m2": "Gestion et coordination des équipes participantes",
+      "m3": "Planification des événements et communication avec les étudiants",
+      "c1": "Leadership",
+      "c2": "Gestion d'équipe",
+      "c3": "Communication et organisation",
+      "c4": "Gestion du temps et des responsabilités"
+    },
+    "bangolo": {
+      "name": "Gestionnaire de magasin",
+      "org":  "Magasin familial de matelas — Bangolo",
+      "desc": "Gestion quotidienne d'un magasin familial de matelas à Bangolo, Côte d'Ivoire.",
+      "m1": "Gestion des ventes et accueil des clients",
+      "m2": "Suivi des stocks et organisation du magasin",
+      "m3": "Assistance à la gestion quotidienne des activités commerciales",
+      "c1": "Sens commercial",
+      "c2": "Gestion de clientèle",
+      "c3": "Communication professionnelle",
+      "c4": "Gestion opérationnelle"
+    }
+  },
+  "acad": {
+    "campuslink": {
+      "name": "Projet de fin d'études — Campus Link",
+      "org":  "SUPMTI Beni Mellal",
+      "desc": "Plateforme sociale et académique destinée aux étudiants, centralisant communication, partage de cours et organisation académique.",
+      "m1": "Fil d'actualité interactif",
+      "m2": "Messagerie privée en temps réel",
+      "m3": "Agenda et emploi du temps avec FullCalendar",
+      "m4": "Partage de cours et fichiers",
+      "m5": "Profils utilisateurs interactifs",
+      "m6": "Système de commentaires et likes",
+      "c1": "Développement Full Stack",
+      "c2": "Architecture client/serveur",
+      "c3": "Conception UI/UX moderne",
+      "c4": "Gestion des API REST",
+      "c5": "Optimisation responsive",
+      "c6": "Gestion des bases de données"
+    },
+    "supmticonnect": {
+      "name": "Projet de module — SUPMTI Connect",
+      "org":  "SUPMTI Beni Mellal",
+      "desc": "Application mobile Android destinée aux étudiants pour faciliter l'accès aux informations académiques et à la communication.",
+      "m1": "Authentification utilisateur Firebase",
+      "m2": "Gestion des données étudiantes avec Cloud Firestore",
+      "m3": "Navigation par fragments Android",
+      "m4": "Interface mobile intuitive",
+      "c1": "Développement Android natif",
+      "c2": "Gestion Firebase",
+      "c3": "Architecture mobile Android",
+      "c4": "Conception d'interfaces mobiles"
+    },
+    "smartel": {
+      "name": "Projet — Smartel Data Platform",
+      "org":  "SUPMTI Beni Mellal — Classe ISI 4",
+      "desc": "Plateforme de gestion et d'exploitation des données réalisée en collaboration avec toute la classe ISI 4 via la méthodologie Agile Scrum.",
+      "m1": "Gestion et organisation des données utilisateurs",
+      "m2": "Tableau de bord interactif",
+      "m3": "Visualisation et structuration des informations",
+      "m4": "Interface responsive moderne",
+      "m5": "Gestion collaborative du projet",
+      "m6": "Suivi des tâches avec Jira",
+      "c1": "Travail et collaboration en équipe",
+      "c2": "Gestion de projet Agile Scrum",
+      "c3": "Organisation des tâches avec Jira",
+      "c4": "Gestion et manipulation de bases de données",
+      "c5": "Conception et structuration des données",
+      "c6": "Communication et coordination d'équipe"
+    }
+  },
+  "techI": {
+    "t1":  "Développement de l'application mobile SUPMTI Connect",
+    "t2":  "Développement de la plateforme web Campus Link",
+    "t3":  "Développement de la plateforme Smartel Data Platform",
+    "t4":  "Conception et développement de portfolio professionnel React",
+    "t5":  "Développement Full Stack avec React.js et Laravel",
+    "t6":  "Création d'API REST et intégration backend/frontend",
+    "t7":  "Gestion de bases de données MySQL, Oracle et Firebase",
+    "t8":  "Développement d'un système de messagerie temps réel",
+    "t9":  "Conception d'un agenda interactif avec FullCalendar",
+    "t10": "Transformation d'application web en APK avec Capacitor",
+    "t11": "Développement d'interfaces UI/UX modernes et responsives",
+    "t12": "Conception UML et modélisation d'applications",
+    "t13": "Déploiement d'applications avec Vercel",
+    "t14": "Intégration de services externes (Resend, Hugging Face, Firebase)",
+    "t15": "Gestion de projet avec la méthodologie Agile Scrum",
+    "t16": "Utilisation d'outils collaboratifs : Jira, GitHub, Discord",
+    "t17": "Gestion et exploitation de bases de données Oracle Database",
+    "t18": "Développement Android avec Java et Android Studio",
+    "t19": "Gestion de l'authentification et sécurité utilisateur",
+    "t20": "Développement d'add-ons Minecraft Bedrock"
+  }
+}
+
+}

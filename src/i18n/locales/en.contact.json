@@ -1,0 +1,23 @@
+{   
+    "contact": {
+  "title":               "Contact",
+  "subtitle":            "An opportunity? A project? Write to me directly.",
+  "available":           "Available",
+  "availableText":       "Open to full-stack opportunities, internships and freelance missions internationally.",
+  "findMe":              "Find me",
+  "location":            "Location",
+  "locationValue":       "Beni Mellal, Morocco",
+  "formTitle":           "Send a message",
+  "name":                "Name",
+  "email":               "Email",
+  "subject":             "Subject",
+  "subjectPlaceholder":  "Collaboration opportunity...",
+  "message":             "Message",
+  "messagePlaceholder":  "Describe your project or opportunity...",
+  "send":                "Send message",
+  "sending":             "Sending...",
+  "success":             "Message sent successfully!",
+  "error":               "Error while sending. Please try again."
+}
+
+}

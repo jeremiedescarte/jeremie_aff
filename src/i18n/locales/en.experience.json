@@ -1,0 +1,145 @@
+{
+  "experience": {
+  "title":    "Experience",
+  "subtitle": "My professional, academic and technical background.",
+  "missions":    "Missions",
+  "competences": "Skills gained",
+  "technologies":"Technologies used",
+  "techList":    "Technical achievements & expertise",
+  "tabs": {
+    "pro":  "Professional",
+    "acad": "Academic",
+    "tech": "Technical"
+  },
+  "types": {
+    "stage":       "Internship",
+    "associatif":  "Association",
+    "commercial":  "Commercial",
+    "pfe":         "Final project",
+    "module":      "Module project",
+    "projet":      "Project"
+  },
+  "pro": {
+    "us2i": {
+      "name": "Software development internship",
+      "org":  "US2I — Beni Mellal",
+      "desc": "Professional internship at US2I, a company specializing in digital solutions.",
+      "m1": "Participation in application development and maintenance",
+      "m2": "Technical assistance on various digital projects",
+      "m3": "Collaboration with the development team on features and bug fixes",
+      "c1": "Working in a professional environment",
+      "c2": "Technical team collaboration",
+      "c3": "Bug fixing and feature optimization",
+      "c4": "Understanding of the software development cycle"
+    },
+    "cesam": {
+      "name": "Sports Officer",
+      "org":  "CESAM — Beni Mellal",
+      "desc": "CESAM: Confederation of African foreign students in Morocco.",
+      "m1": "Organization of student sports activities",
+      "m2": "Management and coordination of participating teams",
+      "m3": "Event planning and communication with students",
+      "c1": "Leadership",
+      "c2": "Team management",
+      "c3": "Communication and organization",
+      "c4": "Time and responsibility management"
+    },
+    "aseesim": {
+      "name": "Academic and Scientific Officer",
+      "org":  "Aseesim — Beni Mellal",
+      "desc": "Aseesim: Association of Ivorian students in Morocco.",
+      "m1": "Organization of academic and scientific activities",
+      "m2": "Management and coordination of participating teams",
+      "m3": "Event planning and communication with students",
+      "c1": "Leadership",
+      "c2": "Team management",
+      "c3": "Communication and organization",
+      "c4": "Time and responsibility management"
+    },
+    "bangolo": {
+      "name": "Store Manager",
+      "org":  "Family mattress store — Bangolo",
+      "desc": "Daily management of a family mattress store in Bangolo, Côte d'Ivoire.",
+      "m1": "Sales management and customer service",
+      "m2": "Inventory tracking and store organization",
+      "m3": "Daily assistance with commercial activities",
+      "c1": "Business acumen",
+      "c2": "Customer relationship management",
+      "c3": "Professional communication",
+      "c4": "Operational management"
+    }
+  },
+  "acad": {
+    "campuslink": {
+      "name": "Final Year Project — Campus Link",
+      "org":  "SUPMTI Beni Mellal",
+      "desc": "Social and academic platform for students, centralizing communication, course sharing and academic organization.",
+      "m1": "Interactive news feed",
+      "m2": "Real-time private messaging",
+      "m3": "Agenda and schedule with FullCalendar",
+      "m4": "Course and file sharing",
+      "m5": "Interactive user profiles",
+      "m6": "Comments and likes system",
+      "c1": "Full Stack development",
+      "c2": "Client/server architecture",
+      "c3": "Modern UI/UX design",
+      "c4": "REST API management",
+      "c5": "Responsive optimization",
+      "c6": "Database management"
+    },
+    "supmticonnect": {
+      "name": "Module Project — SUPMTI Connect",
+      "org":  "SUPMTI Beni Mellal",
+      "desc": "Android mobile application for students to easily access academic information and communication.",
+      "m1": "Firebase user authentication",
+      "m2": "Student data management with Cloud Firestore",
+      "m3": "Navigation using Android Fragments",
+      "m4": "Intuitive mobile interface",
+      "c1": "Native Android development",
+      "c2": "Firebase management",
+      "c3": "Android mobile architecture",
+      "c4": "Mobile interface design"
+    },
+    "smartel": {
+      "name": "Project — Smartel Data Platform",
+      "org":  "SUPMTI Beni Mellal — ISI 4 class",
+      "desc": "Data management and exploitation platform built collaboratively with the ISI 4 class using Agile Scrum methodology.",
+      "m1": "User data management and organization",
+      "m2": "Interactive dashboard",
+      "m3": "Data visualization and structuring",
+      "m4": "Modern responsive interface",
+      "m5": "Collaborative project management",
+      "m6": "Task tracking with Jira",
+      "c1": "Teamwork and collaboration",
+      "c2": "Agile Scrum project management",
+      "c3": "Task organization with Jira",
+      "c4": "Database management and manipulation",
+      "c5": "Data design and structuring",
+      "c6": "Team communication and coordination"
+    }
+  },
+  "techI": {
+    "t1":  "Development of SUPMTI Connect mobile application",
+    "t2":  "Development of Campus Link web platform",
+    "t3":  "Development of Smartel Data Platform",
+    "t4":  "Design and development of React professional portfolio",
+    "t5":  "Full Stack development with React.js and Laravel",
+    "t6":  "REST API creation and backend/frontend integration",
+    "t7":  "Database management: MySQL, Oracle and Firebase",
+    "t8":  "Real-time messaging system development",
+    "t9":  "Interactive agenda design with FullCalendar",
+    "t10": "Web app to APK conversion using Capacitor",
+    "t11": "Modern and responsive UI/UX interface development",
+    "t12": "UML design and application modeling",
+    "t13": "Application deployment with Vercel",
+    "t14": "External services integration (Resend, Hugging Face, Firebase)",
+    "t15": "Project management with Agile Scrum methodology",
+    "t16": "Collaborative tools: Jira, GitHub, Discord",
+    "t17": "Oracle Database management and exploitation",
+    "t18": "Android development with Java and Android Studio",
+    "t19": "User authentication management and security",
+    "t20": "Minecraft Bedrock add-on development"
+  }
+}
+
+}

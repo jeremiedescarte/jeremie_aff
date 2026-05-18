@@ -1,16 +1,70 @@
 {
-  "nav": {
+  "nav2": {
     "home": "Accueil",
     "about": "À propos",
     "services": "Services",
     "portfolio": "Portfolio",
     "contact": "Contact"
   },
+
   "home": {
     "greeting": "Bonjour, je suis",
     "role": "Développeur Full Stack",
     "description": "Développeur Full Stack passionné, expert en technologies web modernes, je crée des applications performantes et évolutives avec React, Laravel et des outils avancés. Compétent en développement mobile, systèmes de télécommunications, architecture de bases de données et gestion de projet — je livre des solutions complètes de bout en bout.",
     "hire": "Engagez-moi",
     "talk": "Discutons"
+  },
+
+  "nav": {
+    "competences"   : "Compétences",
+    "formation"     : "Formation",
+    "experience"    : "Expérience",
+    "projets"       : "Projets",
+    "certifications": "Certifications",
+    "chat"          : "Chat assistant",
+    "contact"       : "Contact",
+    "cv"            : "CV",
+    "retour"        : "Retour accueil"
+  },
+
+  "formation": {
+    "titre"        : "Formation",
+    "sousTitre"    : "Mon parcours académique détaillé, du plus récent au plus ancien.",
+    "enCours"      : "En cours",
+    "obtenu"       : "Obtenu",
+    "aVenir"       : "À venir",
+    "objectifTitre": "Objectif professionnel",
+    "objectifTexte": "Décrocher un poste Full Stack ou Data à l'international après l'obtention du Master en 2027."
+  },
+
+  "contact": {
+    "titre"             : "Contact",
+    "sousTitre"         : "Une opportunité ? Un projet ? Écris-moi directement.",
+    "disponible"        : "Disponible",
+    "disponibleTexte"   : "Ouvert aux opportunités full-stack, stages et missions freelance à l'international.",
+    "meRetrouve"        : "Me retrouver",
+    "formulaireTitre"   : "Envoyer un message",
+    "nom"               : "Nom",
+    "email"             : "Email",
+    "sujet"             : "Sujet",
+    "message"           : "Message",
+    "sujetPlaceholder"  : "Opportunité de collaboration...",
+    "messagePlaceholder": "Décris ton projet ou ton opportunité...",
+    "envoyer"           : "Envoyer le message",
+    "envoiEnCours"      : "Envoi en cours...",
+    "succes"            : "Message envoyé avec succès !",
+    "erreur"            : "Erreur lors de l'envoi. Réessaie."
+  },
+
+  "commun": {
+    "theme": {
+      "clair"  : "Mode clair",
+      "sombre" : "Mode sombre"
+    },
+    "langue": {
+      "fr": "🇫🇷 Français",
+      "en": "🇬🇧 English"
+    }
   }
+
 }

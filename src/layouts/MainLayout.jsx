@@ -1,13 +1,18 @@
-import Navbar from "../components/navbar";
+import Navbar from "../components/Navbar";
 import { Outlet } from "react-router-dom";
 
 const MainLayout = () => {
   return (
     <div className="min-h-screen bg-[#081b29] text-[#ededed]">
+      
+      {/* Navbar */}
       <Navbar />
-      <main>
-        <Outlet /> {/*  ici s'affiche la page active */}
+
+      {/* Contenu */}
+      <main className="pt-24">
+        <Outlet />
       </main>
+
     </div>
   );
 };
