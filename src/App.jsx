@@ -4,6 +4,7 @@ import Home from "./pages/home";
 import About from "./pages/about";
 import About2 from "./pages/contact";
 import Chat from "./pages/chat";
+import Overview from "./pages/dashboard/Overview";
 import DashboardLayout from "./layouts/DashboardLayout";
 import Contact from "./pages/dashboard/contact";
 import Formation from "./pages/dashboard/formation";
@@ -12,6 +13,7 @@ import Projets from "./pages/dashboard/projets";
 import Experience from "./pages/dashboard/experiences";
 import CV from "./pages/dashboard/cv";
 import Certifications from "./pages/dashboard/certifications";
+import Moi from "./pages/dashboard/moi";
 
 import './themes.css'
 
@@ -29,6 +31,7 @@ function App() {
 
               {/* Dashboard */}
       <Route path="/dashboard" element={<DashboardLayout />}>
+        <Route index element={<Overview />} />
         <Route path="certifications" element={<Certifications />} />
         <Route path="experience"     element={<Experience />} />
         <Route path="projets"        element={<Projets />} />
@@ -37,6 +40,7 @@ function App() {
         <Route path="chat"           element={<Chat />} />
         <Route path="contact"        element={<Contact />} />
         <Route path="cv"             element={<CV />} /> 
+        <Route path="moi"             element={<Moi />} />
       </Route>
       </Routes>
     </Router>

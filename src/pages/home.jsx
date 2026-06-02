@@ -1,90 +1,249 @@
-import MainLayout from "../layouts/MainLayout";
-import React from "react";
+import { useEffect, useRef } from "react";
+import { useNavigate, Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import "./styles.css";
+import ToggleBar from "../components/ToggleBar";
 
+// ══════════════════════════════════════════════════════════
+// NAVBAR HOME
+// ══════════════════════════════════════════════════════════
+const NavbarHome = () => {
+  const { t } = useTranslation();
+  const navigate = useNavigate();
 
-const Home = () => {
-  const { t, i18n } = useTranslation();
-
-  const changeLanguage = (lang) => {
-    i18n.changeLanguage(lang);
-    localStorage.setItem("lang", lang);
-  };
   return (
+    <header
+      className="fixed top-0 left-0 w-full z-25 flex items-center justify-between px-6 md:px-[10%] py-4"
+      style={{
+        background:     "var(--fond-surface)",
+        borderBottom:   "1px solid var(--bordure-douce)",
+        backdropFilter: "blur(12px)",
+      }}
+    >
+      <a
+        href="#"
+        className="text-xl md:text-2xl font-bold transition-colors duration-300"
+        style={{ color: "var(--texte-principal)" }}
+        onMouseEnter={(e) => (e.currentTarget.style.color = "var(--accent)")}
+        onMouseLeave={(e) => (e.currentTarget.style.color = "var(--texte-principal)")}
+      >
+        AFFODO<span style={{ color: "var(--accent)" }}> Services</span>
+      </a>
 
-    <section className="min-h-screen flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-[10%] pt-28 pb-16 md:pt-0 gap-10">
+      <div className="flex items-center gap-3">
+        <ToggleBar disposition="ligne" />
+        <button
+          onClick={() => navigate("/dashboard")}
+          className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300 hover:opacity-90 hover:scale-[1.03]"
+          style={{ background: "var(--accent)", color: "var(--accent-texte)" }}
+        >
+          <i className="bx bx-grid-alt text-base" />
+          <span className="hidden sm:inline">{t("home.nav.dashboard", "Dashboard")}</span>
+        </button>
+      </div>
+    </header>
+  );
+};
 
-      {/* ── BLOC 1 : Contenu texte (gauche) ── */}
-      <div className="flex flex-col items-start max-w-2xl w-full">
+// ══════════════════════════════════════════════════════════
+// PAGE HOME
+// ══════════════════════════════════════════════════════════
+const Home = () => {
+  const { t } = useTranslation();
+  const navigate = useNavigate();
+  const heroRef  = useRef(null);
 
-        {/* Titre */}
-        <h1 className="text-2xl md:text-4xl lg:text-[40px] lg:font-bold lg:leading-[1.2] leading-tight mb-3">
-         {t('home.greeting')} Enagnon Jeremie AFFODO
-        </h1>
+  // ── Desktop uniquement : wheel → dashboard ──
+  useEffect(() => {
+    const isMobile = () => window.innerWidth < 768;
+    let timeout = null;
+    const handleWheel = (e) => {
+      if (isMobile()) return;
+      if (e.deltaY > 40) {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => navigate("/dashboard"), 150);
+      }
+    };
+    window.addEventListener("wheel", handleWheel, { passive: true });
+    return () => {
+      window.removeEventListener("wheel", handleWheel);
+      clearTimeout(timeout);
+    };
+  }, [navigate]);
 
-        {/* Sous-titre */}
-        <h3 className="text-xl sm:text-2xl font-bold text-[#00abf0] mb-5">
-          {t('home.role')}
-        </h3>
+  const socials = [
+    { icon: "bxl-linkedin",  href: "https://linkedin.com/in/jeremie-affodo", label: "LinkedIn"  },
+    { icon: "bxl-github",    href: "https://github.com/jeremiedescarte",      label: "GitHub"    },
+    { icon: "bxl-instagram", href: "#",                                        label: "Instagram" },
+  ];
 
-        {/* Description */}
-        <p className="text-sm sm:text-base text-[#ededed]/80 mb-8 font-medium leading-relaxed">
-        {t('home.description')}
+  return (
+    /*
+      Mobile  : scroll libre, hauteur auto
+      Desktop : page fixe h-screen overflow-hidden, wheel → dashboard
+    */
+    <div
+      className="min-h-screen md:h-screen md:overflow-hidden"
+      style={{ background: "var(--fond-base)", color: "var(--texte-principal)" }}
+    >
+      <NavbarHome />
+
+      {/* ══════════════════════════════════════════════
+          SECTION HERO
+      ══════════════════════════════════════════════ */}
+      <section
+        ref={heroRef}
+        className="
+          min-h-screen md:h-screen md:overflow-hidden
+          flex flex-col md:flex-row items-center justify-between
+          px-6 md:px-[10%]
+          pt-24 pb-16
+          md:pt-0 md:pb-0
+          gap-8 md:gap-10
+        "
+      >
+
+        {/* ── Image de profil (haut sur mobile, droite sur desktop) ── */}
+        <div
+          className="
+            flex-shrink-0 order-first md:order-last
+            w-36 h-36
+            sm:w-48 sm:h-48
+            md:w-64 md:h-64
+            lg:w-[280px] lg:h-[360px]
+            relative mt-4 md:mt-0
+          "
+        >
+          <div
+            className="absolute inset-0 rounded-full blur-2xl scale-110 opacity-30"
+            style={{ background: "var(--accent)" }}
+          />
+          <img
+            src="/profile.png"
+            alt="Jeremie AFFODO"
+            className="relative w-full h-full object-cover rounded-full"
+            style={{
+              border:          "4px solid var(--accent)",
+              boxShadow:       "0 0 40px var(--accent)",
+              maskImage:       "radial-gradient(circle, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%)",
+              WebkitMaskImage: "radial-gradient(circle, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%)",
+            }}
+          />
+        </div>
+
+        {/* ── Bloc texte ── */}
+        <div className="flex flex-col items-start w-full max-w-xl order-last md:order-first">
+
+          {/* Titre */}
+          <h1
+            className="text-2xl sm:text-3xl md:text-3xl lg:text-[38px] font-bold leading-tight mb-2"
+            style={{ color: "var(--texte-principal)" }}
+          >
+            {t("home.greeting")}{" "}
+            <span style={{ color: "var(--accent)" }}>Enagnon Jeremie AFFODO</span>
+          </h1>
+
+          {/* Rôle */}
+          <h3
+            className="text-base sm:text-lg md:text-xl font-bold mb-3"
+            style={{ color: "var(--accent)" }}
+          >
+            {t("home.role")}
+          </h3>
+
+          {/* Description */}
+          <p
+            className="text-sm mb-3 leading-relaxed"
+            style={{ color: "var(--texte-secondaire)" }}
+          >
+            {t("home.description")}
+          </p>
+
+          {/* Badge disponible */}
+          <div
+            className="flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-medium mb-5"
+            style={{
+              background: "var(--accent-fond)",
+              border:     "1px solid var(--accent-bordure)",
+              color:      "var(--accent)",
+            }}
+          >
+            <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: "var(--accent)" }} />
+            {t("home.badge", "Disponible · Open to work")}
+          </div>
+
+          {/* Boutons CTA */}
+          <div className="flex flex-wrap gap-3 mb-6">
+            <Link
+              to="/dashboard/contact"
+              className="px-6 py-2.5 font-semibold rounded-lg transition-all duration-300 text-sm"
+              style={{ background: "var(--accent)", color: "var(--accent-texte)", border: "2px solid var(--accent)" }}
+              onMouseEnter={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = "var(--accent)"; }}
+              onMouseLeave={(e) => { e.currentTarget.style.background = "var(--accent)";  e.currentTarget.style.color = "var(--accent-texte)"; }}
+            >
+              {t("home.cta.hire", "Hire Me")}
+            </Link>
+
+            <Link
+              to="/dashboard/chat"
+              className="px-6 py-2.5 font-semibold rounded-lg transition-all duration-300 text-sm"
+              style={{ background: "transparent", color: "var(--accent)", border: "2px solid var(--accent)" }}
+              onMouseEnter={(e) => { e.currentTarget.style.background = "var(--accent)";  e.currentTarget.style.color = "var(--accent-texte)"; }}
+              onMouseLeave={(e) => { e.currentTarget.style.background = "transparent";    e.currentTarget.style.color = "var(--accent)"; }}
+            >
+              {t("home.cta.talk", "Let's Talk")}
+            </Link>
+          </div>
+
+          {/* Réseaux sociaux */}
+          <div className="flex gap-3">
+            {socials.map((s) => (
+              <a
+                key={s.icon}
+                href={s.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={s.label}
+                className="w-9 h-9 flex items-center justify-center rounded-full transition-all duration-300 hover:scale-110"
+                style={{ border: "2px solid var(--accent)", color: "var(--accent)", background: "transparent" }}
+                onMouseEnter={(e) => { e.currentTarget.style.background = "var(--accent)"; e.currentTarget.style.color = "var(--accent-texte)"; }}
+                onMouseLeave={(e) => { e.currentTarget.style.background = "transparent";   e.currentTarget.style.color = "var(--accent)"; }}
+              >
+                <i className={`bx ${s.icon} text-base`} />
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════════
+          INDICATEUR SCROLL — desktop uniquement
+      ══════════════════════════════════════════════ */}
+      <div className="hidden md:flex fixed bottom-8 left-1/2 -translate-x-1/2 flex-col items-center gap-2 z-40 animate-bounce">
+        <p className="text-xs font-medium" style={{ color: "var(--texte-tertiaire)" }}>
+          {t("home.scrollHint", "Scroll pour explorer")}
         </p>
-
-        {/* ── BLOC 2 : Boutons CTA ── */}
-        <div className="btn-box flex w-[345px] h-[45px] gap-4 flex-wrap mb-10 space-x-3">
-
-          {/* Bouton 1 — Hire Me (fond plein) */}
-          <a href="/dashboard/contact"
-            className="relative px-7 py-3 bg-[#00abf0] border-2 border-[#00abf0] font-semibold rounded-lg overflow-hidden group transition-all duration-300 hover:text-[#00abf0]">
-            <span className="absolute inset-0 bg-[#081b29] translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500 ease-in-out z-0" />
-            <span className="relative z-10">Hire Me</span>
-          </a>
-
-          {/* Bouton 2 — Let's Talk (contour) */}
-          <a href="/dashboard/chat"
-            className="relative px-7 py-3 bg-transparent border-2 border-[#00abf0] text-[#00abf0] font-semibold rounded-lg overflow-hidden group transition-all duration-300 hover:text-[#081b29]">
-            <span className="absolute inset-0 bg-[#00abf0] translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500 ease-in-out z-0" />
-            <span className="relative z-10">Let's Talk</span>
-          </a>
-
+        <div
+          className="w-6 h-10 rounded-full border-2 flex items-start justify-center pt-1.5"
+          style={{ borderColor: "var(--accent)" }}
+        >
+          <div className="w-1 h-2.5 rounded-full animate-pulse" style={{ background: "var(--accent)" }} />
         </div>
-
-        {/* ── BLOC 3 : Icônes réseaux sociaux ── */}
-        <div className="flex gap-4">
-          {[
-            { icon: "bxl-facebook",  href: "#" },
-            { icon: "bxl-instagram", href: "#" },
-            { icon: "bxl-linkedin",  href: "#" },
-          ].map((s) => (
-            <a key={s.icon} href={s.href}
-              className="relative w-10 h-10 flex items-center justify-center border-2 border-[#00abf0] rounded-full text-[#00abf0] overflow-hidden group transition-all duration-300 hover:text-[#081b29]">
-              <span className="absolute inset-0 bg-[#00abf0] scale-0 group-hover:scale-100 rounded-full transition-transform duration-300 z-0" />
-              <i className={`bx ${s.icon} text-lg relative z-10`} />
-            </a>
-          ))}
-        </div>
-
+        <i className="bx bx-chevron-down text-xl" style={{ color: "var(--accent)" }} />
       </div>
 
-      {/* ── BLOC 4 : Image de profil (droite) ── */}
-      <div className="flex-shrink-0 left-[30px] w-56 h-56 sm:w-72 sm:h-72 lg:w-[340px] lg:h-[450px] relative">
-        {/* Halo lumineux derrière l'image */}
-        <div className="absolute inset-0 rounded-full bg-[#00abf0]/20 blur-2xl scale-110" />
-        <img
-          src="/profile.png"
-          alt="Jeremie AFFODO"
-          className="relative w-full h-full object-cover rounded-full border-4 border-[#00abf0] shadow-[0_0_40px_#00abf0]"
-          style={{
-            maskImage: "radial-gradient(circle, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%)",
-            WebkitMaskImage: "radial-gradient(circle, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%)",
-          }}
-        />
+      {/* ── Bouton dashboard mobile (en bas) ── */}
+      <div className="md:hidden flex justify-center pb-10">
+        <button
+          onClick={() => navigate("/dashboard")}
+          className="flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold transition-all"
+          style={{ background: "var(--accent)", color: "var(--accent-texte)" }}
+        >
+          <i className="bx bx-grid-alt" />
+          {t("home.nav.dashboard", "Dashboard")}
+          <i className="bx bx-right-arrow-alt" />
+        </button>
       </div>
-    </section>
-
+    </div>
   );
 };
 

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <!-- Blue gradient for left leg: bright cyan top to deep blue bottom -->
+    <linearGradient id="bgL" x1="40%" y1="0%" x2="60%" y2="100%">
+      <stop offset="0%" stop-color="#00D4FF"/>
+      <stop offset="100%" stop-color="#0055C8"/>
+    </linearGradient>
+    <!-- Blue gradient for right leg: slightly darker -->
+    <linearGradient id="bgR" x1="0%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#00AAEE"/>
+      <stop offset="100%" stop-color="#004BBF"/>
+    </linearGradient>
+    <!-- Green swoosh gradient -->
+    <linearGradient id="gg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#267300"/>
+      <stop offset="55%" stop-color="#55B800"/>
+      <stop offset="100%" stop-color="#3A9900"/>
+    </linearGradient>
+  </defs>
+
+  <!--
+  LOGO STRUCTURE (from careful image observation):
+
+  The letter A:
+  - Apex at top-center ~(250, 108)
+  - Left outer edge: goes diagonally from apex down-left to ~(108, 430)
+  - Left inner edge: parallel, from apex to ~(165, 410)
+  - Right inner edge: from apex to ~(285, 410) roughly
+  - Right outer edge: from apex to ~(392, 430)
+  - The bottom of the left leg is hidden/cut by the green swoosh
+  - The right leg bottom is fully visible
+
+  Green swoosh:
+  - A thick crescent/arc shape
+  - Starts at bottom-left ~(95, 435), curves UP and RIGHT
+  - Peaks around center-right ~(360, 285)
+  - Top edge of swoosh goes from ~(155, 350) curving to ~(435, 295)
+  - Bottom edge goes from ~(95, 435) curving to ~(435, 330)
+  - Passes IN FRONT of the left leg
+  - Passes BEHIND the right leg bottom
+  -->
+
+  <!-- LEFT LEG of A (blue) - partially covered by green swoosh -->
+  <path d="
+    M 250,108
+    L 272,108
+    L 210,400
+    L 152,400
+    Z
+  " fill="url(#bgL)"/>
+
+  <!-- RIGHT LEG of A (blue) - fully visible, goes below swoosh -->
+  <path d="
+    M 250,108
+    L 272,108
+    L 395,432
+    L 340,432
+    Z
+  " fill="url(#bgR)"/>
+
+  <!-- GREEN SWOOSH - on top of left leg, below right leg tip -->
+  <!-- A fat arc band curving from lower-left to upper-right -->
+  <path d="
+    M 100,440
+    C 108,395 145,345 210,320
+    C 272,298 340,302 440,278
+    L 445,305
+    C 344,330 276,326 214,350
+    C 150,374 130,418 128,458
+    Z
+  " fill="url(#gg)"/>
+
+</svg>

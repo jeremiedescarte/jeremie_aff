@@ -1,0 +1,35 @@
+{
+  "nav": {
+    "about": "À propos"
+  },
+  "about": {
+    "role":    "Full Stack Developer · Data Science · Cybersécurité",
+    "bio1":    "Originaire de Côte d'Ivoire, je suis actuellement étudiant en Master Génie des Systèmes Informatiques, spécialité Data Science & Systèmes d'Information à SUP MTI Beni Mellal, Maroc. Mon parcours m'a amené à développer une double compétence technique : le développement Full Stack d'un côté, la Data Science et la Cybersécurité de l'autre.",
+    "bio2":    "Durant mon stage chez US2i (Beni Mellal), j'ai travaillé sur la maintenance système, la coordination de projets et le développement d'applications avec Laravel et React. Mon objectif est de rejoindre une équipe internationale après l'obtention de mon diplôme.",
+    "stat": {
+      "years":    "ans d'expérience",
+      "projects": "projets réalisés",
+      "certs":    "certifications",
+      "langs":    "langues"
+    },
+    "story": {
+      "title": "Mon histoire",
+      "p1":    "Tout a commencé par une passion pour la résolution de problèmes. Dès mes premières lignes de code, j'ai compris que l'informatique était bien plus qu'une discipline technique — c'est un outil pour transformer des idées en réalités concrètes.",
+      "p2":    "Après mon Baccalauréat en Côte d'Ivoire, j'ai poursuivi mes études au Maroc à SUP MTI, où j'ai obtenu ma Licence avant d'intégrer le Master. Cette expérience m'a formé techniquement et appris à travailler dans des environnements multiculturels.",
+      "p3":    "Aujourd'hui, je construis ce portfolio avec un objectif clair : décrocher une opportunité internationale et contribuer à des projets qui comptent vraiment."
+    },
+    "values": {
+      "title": "Mes valeurs"
+    },
+    "value": {
+      "curiosity":      "Curiosité",
+      "curiosity.desc": "J'apprends en permanence, chaque problème est une opportunité.",
+      "rigor":          "Rigueur",
+      "rigor.desc":     "Code propre, architecture solide, résultats fiables.",
+      "collab":         "Collaboration",
+      "collab.desc":    "Les meilleurs projets naissent d'une bonne équipe.",
+      "ambition":       "Ambition",
+      "ambition.desc":  "Viser l'international, toujours aller plus loin."
+    }
+  }
+}

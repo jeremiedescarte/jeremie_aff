@@ -30,10 +30,7 @@ const Navbar = () => {
   return (
 <header
   className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 px-6 md:px-[10%] py-4 flex justify-between items-center
-  ${scrolled
-    ? "bg-[#081b29]/90 backdrop-blur-md shadow-lg shadow-[#00abf0]/10"
-    : "bg-[#081b29]"
-  }`}
+    ${scrolled ? "" : "bg-transparent"}`}
 >
 
       {/* Logo */}

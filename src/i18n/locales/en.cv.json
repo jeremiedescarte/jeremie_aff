@@ -30,6 +30,11 @@
       "tagline": "System management & maintenance",
       "desc":    "System administration-oriented resume highlighting DHCP/DNS configuration, server management, virtualization and system maintenance. Ideal for system administrator positions."
     },
+    "cvacademique": {
+      "name":    "Academic Resume",
+      "tagline": "Academic background & technical skills",
+      "desc":    "Academic resume highlighting my university background, algorithmic, mathematics and programming language skills. Ideal for academic or research applications."
+    },
     "gerant": {
       "name":    "Manager",
       "tagline": "Management, leadership & organization",

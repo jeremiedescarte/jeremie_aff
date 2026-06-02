@@ -1,0 +1,36 @@
+{
+      "nav": {
+    "about": "About"
+  },
+  "about": {
+    "role":    "Full Stack Developer · Data Science · Cybersecurity",
+    "bio1":    "Originally from Ivory Coast, I am currently a Master's student in Computer Systems Engineering, specializing in Data Science & Information Systems at SUP MTI Beni Mellal, Morocco. My journey led me to develop dual technical expertise: Full Stack development on one side, Data Science and Cybersecurity on the other.",
+    "bio2":    "During my internship at US2i (Beni Mellal), I worked on system maintenance, project coordination, and application development using Laravel and React. My goal is to join an international team after graduation.",
+    "stat": {
+      "years":    "yrs experience",
+      "projects": "projects",
+      "certs":    "certifications",
+      "langs":    "languages"
+    },
+    "story": {
+      "title": "My story",
+      "p1":    "It all started with a passion for problem-solving. From my very first lines of code, I understood that computer science is much more than a technical discipline — it's a tool to turn ideas into concrete realities.",
+      "p2":    "After my Baccalaureate in Ivory Coast, I continued my studies in Morocco at SUP MTI, where I earned my Bachelor's degree before joining the Master's program. This experience shaped me technically and taught me to work in multicultural environments.",
+      "p3":    "Today, I'm building this portfolio with a clear goal: land an international opportunity and contribute to projects that truly matter."
+    },
+    "values": {
+      "title": "My values"
+    },
+    "value": {
+      "curiosity":      "Curiosity",
+      "curiosity.desc": "I learn constantly — every problem is an opportunity.",
+      "rigor":          "Rigor",
+      "rigor.desc":     "Clean code, solid architecture, reliable results.",
+      "collab":         "Collaboration",
+      "collab.desc":    "The best projects come from great teamwork.",
+      "ambition":       "Ambition",
+      "ambition.desc":  "Aiming for the international stage, always going further."
+    }
+  }
+
+}

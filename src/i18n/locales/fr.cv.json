@@ -30,6 +30,11 @@
       "tagline": "Gestion & maintenance des systèmes",
       "desc":    "CV orienté administration système mettant en avant la configuration DHCP/DNS, la gestion des serveurs, la virtualisation et la maintenance système. Idéal pour les postes d'administrateur système."
     },
+    "cvacademique": {
+      "name":    "CV Académique",
+      "tagline": "Parcours académique & compétences techniques",
+      "desc":    "CV académique mettant en avant mon parcours universitaire, mes compétences en algorithmique, mathématiques et langages de programmation. Idéal pour les candidatures académiques ou de recherche."
+    },
     "gerant": {
       "name":    "Gérant / Manager",
       "tagline": "Gestion, leadership & organisation",

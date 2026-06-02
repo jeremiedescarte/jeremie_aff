@@ -18,6 +18,8 @@ import frCertifications from './locales/fr.certifications.json';
 import enCertifications from './locales/en.certifications.json';
 import frchat from './locales/fr.chat.json';
 import enchat from './locales/en.chat.json';
+import frMoi from './locales/fr.moi.json';
+import enMoi from './locales/en.moi.json';
 
 i18n
   .use(initReactI18next)  // connecte i18next à React
@@ -33,6 +35,7 @@ i18n
         cv: frCV,
         certifications: frCertifications,
         chat: frchat,
+        moi: frMoi,
       },
       en: {
         translation: en,
@@ -44,19 +47,20 @@ i18n
         cv: enCV,
         certifications: enCertifications,
         chat: enchat,
+        moi: enMoi,
       },
     },
 
     lng: ['fr', 'en'].includes(localStorage.getItem("lang")) 
     ? localStorage.getItem("lang") 
-    : "fr", 
+    : "en", // langue par défaut (si aucune sélection ou si la sélection n'est pas supportée)
     fallbackLng: 'en',    // si une clé manque → fallback anglais
 
-    ns: ["translation", "formation", "experience", "projets", "contact", "competences", "cv", "certifications", "chat"], // namespaces disponibles
+    ns: ["translation", "formation", "experience", "projets", "contact", "competences", "cv", "certifications", "chat", "moi"], // namespaces disponibles
     defaultNS: "translation",
 
     interpolation: {
-      escapeValue: false, // React gère déjà la sécurité XSS
+      escapeValue: false, // React gère déjà la sécurité XSS, pas besoin d'échapper les valeurs
     },
   });
 

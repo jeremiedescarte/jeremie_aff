@@ -6,7 +6,7 @@ const socials = [
     icon: "bxl-linkedin",
     label: "LinkedIn",
     value: "linkedin.com/in/jeremie-affodo",
-    href: "https://linkedin.com/in/jeremie-affodo",
+    href: "http://linkedin.com/in/enagnon-jeremie-affodo-396422356",
     color: "#0077b5",
   },
   {

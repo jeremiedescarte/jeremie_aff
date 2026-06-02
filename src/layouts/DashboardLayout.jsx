@@ -21,6 +21,7 @@ const DashboardLayout = () => {
     { to: "chat",    icon: "bx bx-bot",      label: t("nav.chat"),    badge: "IA" },
     { to: "contact", icon: "bx bx-envelope", label: t("nav.contact") },
     { to: "cv",      icon: "bx bx-file",     label: t("nav.cv") },
+    { to: "moi",     icon: "bx bx-user",     label: t("nav.moi") },
   ];
 
   const pageTitles = {
@@ -32,6 +33,8 @@ const DashboardLayout = () => {
     "/dashboard/chat":           t("nav.chat"),
     "/dashboard/contact":        t("nav.contact"),
     "/dashboard/cv":             t("nav.cv"),
+    "/dashboard/moi":             t("nav.moi"),
+
   };
 
   const pageIcons = {
@@ -43,6 +46,7 @@ const DashboardLayout = () => {
     "/dashboard/chat":           "bx bx-bot",
     "/dashboard/contact":        "bx bx-envelope",
     "/dashboard/cv":             "bx bx-file",
+    "/dashboard/moi":             "bx bx-user",
   };
 
   const currentTitle = pageTitles[location.pathname] || "Dashboard";
@@ -97,10 +101,7 @@ const DashboardLayout = () => {
               className="text-sm font-semibold leading-tight"
               style={{ color: "var(--texte-principal)" }}
             >
-              Jeremie A.
-            </p>
-            <p className="text-xs" style={{ color: "var(--texte-tertiaire)" }}>
-              Full Stack Dev
+              Enagnon Jeremie AFFODO
             </p>
           </div>
         </div>

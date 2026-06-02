@@ -24,36 +24,30 @@
     "chat"          : "Chat assistant",
     "contact"       : "Contact",
     "cv"            : "CV",
+    "moi"           : "À propos de moi",
     "retour"        : "Retour accueil"
   },
 
-  "formation": {
-    "titre"        : "Formation",
-    "sousTitre"    : "Mon parcours académique détaillé, du plus récent au plus ancien.",
-    "enCours"      : "En cours",
-    "obtenu"       : "Obtenu",
-    "aVenir"       : "À venir",
-    "objectifTitre": "Objectif professionnel",
-    "objectifTexte": "Décrocher un poste Full Stack ou Data à l'international après l'obtention du Master en 2027."
-  },
-
-  "contact": {
-    "titre"             : "Contact",
-    "sousTitre"         : "Une opportunité ? Un projet ? Écris-moi directement.",
-    "disponible"        : "Disponible",
-    "disponibleTexte"   : "Ouvert aux opportunités full-stack, stages et missions freelance à l'international.",
-    "meRetrouve"        : "Me retrouver",
-    "formulaireTitre"   : "Envoyer un message",
-    "nom"               : "Nom",
-    "email"             : "Email",
-    "sujet"             : "Sujet",
-    "message"           : "Message",
-    "sujetPlaceholder"  : "Opportunité de collaboration...",
-    "messagePlaceholder": "Décris ton projet ou ton opportunité...",
-    "envoyer"           : "Envoyer le message",
-    "envoiEnCours"      : "Envoi en cours...",
-    "succes"            : "Message envoyé avec succès !",
-    "erreur"            : "Erreur lors de l'envoi. Réessaie."
+    "overview": {
+      "title": "Bienvenue sur mon Dashboard",
+      "subtitle": "Enagnon Jeremie AFFODO · Full Stack Developer & Data Science",
+      "intro": "Ce dashboard est mon espace professionnel interactif. Je l'ai conçu pour remplacer un CV statique par une expérience vivante : chaque section est accessible en un clic, disponible en français et en anglais, et adaptée à tous les appareils.",
+      "stat": {
+        "years": "ans d'expérience",
+        "projects": "projets",
+        "certs": "certifications",
+        "langs": "langues"
+      },
+      "desc": {
+        "competences": "Stacks techniques et niveaux de maîtrise.",
+        "formation": "Parcours académique de la Côte d'Ivoire au Maroc.",
+        "experience": "Missions professionnelles et stages.",
+        "projets": "Applications et systèmes conçus et déployés.",
+        "certifications": "Certifications et reconnaissances obtenues.",
+        "chat": "Posez vos questions sur mon profil à mon IA.",
+        "contact": "Écrivez-moi pour toute opportunité.",
+        "cv": "Téléchargez mon CV en PDF."
+      }
   },
 
   "commun": {

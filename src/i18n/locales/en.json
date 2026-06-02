@@ -23,38 +23,35 @@
     "chat"          : "Chat Assistant",
     "contact"       : "Contact",
     "cv"            : "Resume",
+    "moi"           : "About Me",
     "retour"        : "Back to home",
     "title"         : "Dashboard"
   },
- 
-  "formation": {
-    "titre"        : "Education",
-    "sousTitre"    : "My academic journey, from most recent to oldest.",
-    "enCours"      : "In progress",
-    "obtenu"       : "Completed",
-    "aVenir"       : "Upcoming",
-    "objectifTitre": "Career goal",
-    "objectifTexte": "Land a Full Stack or Data position internationally after completing my Master's in 2027."
+
+    "overview": {
+      "title": "Welcome to my Dashboard",
+      "subtitle": "Enagnon Jeremie AFFODO · Full Stack Developer & Data Science",
+      "intro": "This dashboard replaces my static resume with an interactive experience. Browse via the sidebar or click a card to explore my profile.",
+      "stat": {
+        "years": "yrs experience",
+        "projects": "projects",
+        "certs": "certifications",
+        "langs": "languages"
+      },
+      "desc": {
+        "competences": "Tech stacks and skill levels.",
+        "formation": "Academic path from Ivory Coast to Morocco.",
+        "experience": "Professional missions and internships.",
+        "projets": "Apps and systems I designed and deployed.",
+        "certifications": "Certifications and achievements.",
+        "chat": "Ask my AI anything about my profile.",
+        "contact": "Reach out for any opportunity.",
+        "cv": "Download my resume as PDF."
+      }
   },
+
  
-  "contact": {
-    "titre"             : "Contact",
-    "sousTitre"         : "An opportunity? A project? Reach out directly.",
-    "disponible"        : "Available",
-    "disponibleTexte"   : "Open to full-stack roles, internships, and international freelance missions.",
-    "meRetrouve"        : "Find me",
-    "formulaireTitre"   : "Send a message",
-    "nom"               : "Name",
-    "email"             : "Email",
-    "sujet"             : "Subject",
-    "message"           : "Message",
-    "sujetPlaceholder"  : "Collaboration opportunity...",
-    "messagePlaceholder": "Describe your project or opportunity...",
-    "envoyer"           : "Send message",
-    "envoiEnCours"      : "Sending...",
-    "succes"            : "Message sent successfully!",
-    "erreur"            : "Error sending. Please try again."
-  },
+
  
   "commun": {
     "theme": {

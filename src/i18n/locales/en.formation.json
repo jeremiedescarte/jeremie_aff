@@ -29,12 +29,17 @@
         "m1": {
           "label": "M1 — 2025/2026",
           "acquis": [
+            "Distributed and Mobile Development",
+            "Project Management and Agile Processes",
+            "IS Administration and Security",
+            "Network Interconnection",
+            "Big Data (Hadoop, Spark) and Data Science",
             "Machine Learning & Deep Learning",
-            "Big Data (Hadoop, Spark)",
-            "Distributed Systems & Microservices",
-            "Data Warehouse & Business Intelligence",
-            "Advanced Cybersecurity",
-            "Cloud Computing (AWS / Azure)"
+            "Advanced Database (Oracle...)",
+            "Advanced Programming Practice (Laravel...)",
+            "Advanced Computer Security",
+            "Scrum Certification and Specialization Project",
+            "Soft Skills & Professional Communication"
           ]
         }
       }
