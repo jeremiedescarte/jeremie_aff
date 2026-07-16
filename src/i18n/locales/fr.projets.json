@@ -64,7 +64,62 @@
         "Formulaire de contact",
         "Navigation moderne"
       ]
-    }
+    },
+    "ids": {
+  "name":    "Système Intelligent de Détection d'Intrusions",
+  "tagline": "Système de sécurité réseau basé sur le ML",
+  "desc":    "Système de machine learning conçu pour détecter et classifier les intrusions réseau en temps réel, capable d'identifier plusieurs types de cyberattaques avec une précision élevée sur le dataset CICIDS2017.",
+  "features": [
+    "Classification multi-classes des attaques",
+    "Modèles Random Forest, XGBoost, MLP et DNN",
+    "Précision de 99,93 % obtenue avec XGBoost",
+    "Pipeline ML complet, du prétraitement à l'évaluation"
+  ]
+},
+"zonely": {
+  "name":    "Zonely",
+  "tagline": "Plateforme intelligente de logement étudiant",
+  "desc":    "Plateforme intelligente dédiée au logement étudiant, à la colocation et aux services de proximité, intégrant des fonctionnalités basées sur l'intelligence artificielle.",
+  "features": [
+    "Recommandations de logement par IA",
+    "Système de mise en relation pour la colocation",
+    "Carte interactive des services à proximité",
+    "Gestion des annonces pour les propriétaires"
+  ]
+},
+"callfree": {
+  "name":    "CallFree",
+  "tagline": "Plateforme de communication en temps réel",
+  "desc":    "Solution de communication multiplateforme permettant les appels audio et vidéo, la messagerie instantanée et le partage de fichiers en temps réel.",
+  "features": [
+    "Appels audio et vidéo via WebRTC",
+    "Messagerie instantanée",
+    "Partage de fichiers",
+    "Multiplateforme : web et mobile"
+  ]
+},
+"telecomai": {
+  "name":    "Telecom AI Agent",
+  "tagline": "Agent IA pour les opérations réseau",
+  "desc":    "Agent intelligent destiné aux réseaux télécoms, capable d'analyser les données réseau, d'assister au diagnostic des incidents et d'automatiser certaines tâches grâce à l'IA.",
+  "features": [
+    "Analyse des données réseau",
+    "Assistance au diagnostic d'incidents",
+    "Recherche de connaissances via RAG",
+    "Automatisation des tâches d'exploitation réseau"
+  ]
+},
+"assurai": {
+  "name":    "Vérification IA des Sinistres Auto",
+  "tagline": "Assistant IA multimodal pour l'assurance",
+  "desc":    "Pipeline IA multimodal développé lors d'un hackathon de 24h pour vérifier automatiquement les déclarations de sinistre auto à partir d'images et de documents, en générant des verdicts structurés.",
+  "features": [
+    "Analyse multimodale d'images et de documents",
+    "Génération automatique de verdicts structurés",
+    "Propulsé par Gemini Vision",
+    "44 dossiers de test traités en 24h"
+  ]
+}
   }
 }
 

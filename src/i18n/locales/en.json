@@ -6,13 +6,13 @@
     "portfolio": "Portfolio",
     "contact": "Contact"
   },
-  "home": {
-    "greeting": "Hi, I'm",
-    "role": "Full Stack Developer",
-    "description": "Passionate Full Stack Developer with expertise in modern web technologies, building scalable and high-performance applications using React, Laravel, and advanced development tools. Skilled in Mobile Application Development, Telecommunications systems, Database Architecture and Management, and Project Management — delivering complete end-to-end solutions.",
-    "hire": "Hire Me",
-    "talk": "Let's Talk"
-  },
+"home": {
+  "greeting": "Hi, I'm",
+  "role": "Full Stack Developer & IT Systems Engineer",
+  "description": "Passionate IT Systems Engineer, equally at ease building modern web applications (React, Laravel) and handling systems & network administration. Skilled in database architecture, cybersecurity, virtualization, and project management — I design complete solutions, from the user's workstation to the application itself.",
+  "hire": "Hire Me",
+  "talk": "Let's Talk"
+},
 
   "nav": {
     "competences"   : "Skills",

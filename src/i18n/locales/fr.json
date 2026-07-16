@@ -7,14 +7,13 @@
     "contact": "Contact"
   },
 
-  "home": {
-    "greeting": "Bonjour, je suis",
-    "role": "Développeur Full Stack",
-    "description": "Développeur Full Stack passionné, expert en technologies web modernes, je crée des applications performantes et évolutives avec React, Laravel et des outils avancés. Compétent en développement mobile, systèmes de télécommunications, architecture de bases de données et gestion de projet — je livre des solutions complètes de bout en bout.",
-    "hire": "Engagez-moi",
-    "talk": "Discutons"
-  },
-
+ "home": {
+  "greeting": "Bonjour, je suis",
+  "role": "Développeur Full Stack & Ingénieur Systèmes",
+  "description": "Ingénieur en Systèmes Informatiques passionné, à l'aise aussi bien dans le développement d'applications web modernes (React, Laravel) que dans l'administration systèmes et réseaux. Compétent en architecture de bases de données, sécurité informatique, virtualisation et gestion de projet — je conçois des solutions complètes, du poste utilisateur à l'application.",
+  "hire": "Recrutez",
+  "talk": "Discutons"
+},
   "nav": {
     "competences"   : "Compétences",
     "formation"     : "Formation",

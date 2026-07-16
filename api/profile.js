@@ -7,6 +7,7 @@ const profile = {
   contact: {
     email: "enagnonjeremieaffodo@gmail.com",
     phone: "+212 6 31 35 27 08",
+    linkedin: "https://linkedin.com/in/enagnon-jeremie-affodo-396422356",
     location: "Béni Mellal, Maroc"
   },
   summary: `Master 1 student in Computer Science at SUP MTI Béni Mellal, 

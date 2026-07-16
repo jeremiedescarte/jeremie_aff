@@ -64,7 +64,62 @@
         "Contact form",
         "Modern navigation"
       ]
-    }
+    },
+    "ids": {
+  "name":    "Intelligent Intrusion Detection System",
+  "tagline": "ML-based network security system",
+  "desc":    "Machine learning system designed to detect and classify network intrusions in real time, capable of identifying multiple types of cyberattacks with high accuracy on the CICIDS2017 dataset.",
+  "features": [
+    "Multi-class attack classification",
+    "Random Forest, XGBoost, MLP and DNN models",
+    "99.93% accuracy achieved with XGBoost",
+    "Full ML pipeline from preprocessing to evaluation"
+  ]
+},
+"zonely": {
+  "name":    "Zonely",
+  "tagline": "Smart student housing platform",
+  "desc":    "Intelligent platform dedicated to student housing, roommate matching and nearby services, integrating AI-based features to simplify the search for accommodation.",
+  "features": [
+    "AI-powered housing recommendations",
+    "Roommate matching system",
+    "Interactive map of nearby services",
+    "Listing management for landlords"
+  ]
+},
+"callfree": {
+  "name":    "CallFree",
+  "tagline": "Real-time communication platform",
+  "desc":    "Cross-platform communication solution enabling audio and video calls, instant messaging and file sharing in real time.",
+  "features": [
+    "Audio and video calls via WebRTC",
+    "Instant messaging",
+    "File sharing",
+    "Cross-platform: web and mobile"
+  ]
+},
+"telecomai": {
+  "name":    "Telecom AI Agent",
+  "tagline": "AI agent for network operations",
+  "desc":    "Intelligent agent for telecom networks, able to analyze network data, assist with incident diagnosis and automate operational tasks using AI.",
+  "features": [
+    "Network data analysis",
+    "Incident diagnosis assistance",
+    "RAG-based knowledge retrieval",
+    "Task automation for network operations"
+  ]
+},
+"assurai": {
+  "name":    "Auto Insurance Claim Verification",
+  "tagline": "Multimodal AI claims assistant",
+  "desc":    "Multimodal AI pipeline built during a 24-hour hackathon to automatically verify auto insurance claims from images and documents, generating structured verdicts.",
+  "features": [
+    "Multimodal image and document analysis",
+    "Automated structured verdict generation",
+    "Powered by Gemini Vision",
+    "44 test claims processed within 24 hours"
+  ]
+}
   }
 }
 
