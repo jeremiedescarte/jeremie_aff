@@ -144,7 +144,7 @@ const projets = [
   },
   {
     key: "zonely",
-    type: "web & mobile",
+    type: "hybride",
     status: "avenir",
     color: "#ec4899",
     icon: "bx bx-building-house",
